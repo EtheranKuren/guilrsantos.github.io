@@ -1,0 +1,185 @@
+/* The Variables*/
+:root {
+  --primary-color: #dc143c;
+  --background-gradient: linear-gradient(225deg, #000000, #444444);
+}
+
+/* The Basics */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-gradient);
+  min-height: 100vh; /* Now the body takes up the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Creating the lines to be animated */
+.bglines > div {
+  background-color: var(--primary-color);
+  position: fixed;
+  box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--primary-color), 0 0 40px var(--primary-color), 0 0 50px var(--primary-color), 0 0 60px var(--primary-color);
+  animation-timing-function: ease-out;
+  z-index: -1;
+}
+
+.line1, .line3 {
+  height: 7.5px;
+  width: 100%;
+}
+
+.line2, .line4 {
+  width: 7.5px;
+  height: 100%;
+}
+
+.line1 {
+  top: 45vh;
+  right: 45vw;
+  animation: line1-1 1s, line1-2 1s 1.5s forwards;
+}
+
+.line3 {
+  bottom: 45vh;
+  left: 45vw;
+  animation: line3-1 1s, line3-2 1s 1.5s forwards;
+}
+
+.line2 {
+  left: 45vw;
+  bottom: 45vh;
+  animation: line2-1 2s, line2-2 1s 1.5s forwards;
+}
+
+.line4 {
+  right: 45vw;
+  top: 45vh;
+  animation: line4-1 2s, line4-2 1s 1.5s forwards;
+}
+
+/* Animate Lines */
+@keyframes line1-1 {
+  0% {
+    transform: translate(-45vw, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes line1-2 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(35vw, 0%);
+    top: 10vh;
+  }
+}
+
+@keyframes line2-1 {
+  0% {
+    height: 0%;
+    opacity: 0%;
+  }
+  50% {
+    height: 0%;
+    opacity: 100%;
+  }
+  100% {
+    height: 100%;
+    opacity: 100%;
+  }
+}
+
+@keyframes line2-2 {
+  0% {
+    left: 45vw;
+    bottom: 45vh;
+  }
+  100% {
+    left: 10vw;
+    transform: translate(0, 30vh);
+  }
+}
+
+@keyframes line3-1 {
+  0% {
+    transform: translate(45vw, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes line3-2 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(-35vw, 0%);
+    bottom: 15vh;
+  }
+}
+
+@keyframes line4-1 {
+  0% {
+    height: 0%;
+    opacity: 0%;
+  }
+  50% {
+    height: 0%;
+    opacity: 100%;
+  }
+  100% {
+    height: 100%;
+    opacity: 100%;
+  }
+}
+
+@keyframes line4-2 {
+  0% {
+    right: 45vw;
+    top: 45vh;
+  }
+  100% {
+    right: 10vw;
+    transform: translate(0, -35vh);
+  }
+}
+
+/* Icons */
+.icons {
+  position: absolute;
+  top: clamp(2vh, 4vw, 2vh); /* Responsive top position */
+  right: clamp(125px, 4vw, 200px); /* Responsive right position */
+  display: flex;
+  flex-direction: row; /* Horizontal alignment */
+  align-items: center; /* Center align the icons vertically */
+  gap:2px;
+  opacity: 0;
+  animation: in 1s 2.25s forwards;
+}
+.icons > a {
+  display: flex;
+  align-items: center;
+}
+.icons > a > img {
+  height: clamp(30px, 5vw, 50px); /* Responsive height between 30px and 50px */
+  width: auto; /* Maintain aspect ratio */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Make SVG icons white */
+}
+/* Icons' Fade In Animation*/
+@keyframes in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; /* Fade in to full opacity */
+  }
+}
