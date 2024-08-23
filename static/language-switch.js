@@ -48,9 +48,9 @@ fetch("static/data.json")
             "<br>"
           ))
       );
-      descriptions.forEach(
+      descr.forEach(
         (descr, index) =>
-          (descr.innerHTML = data[currentLanguage][index].description.replace(
+          (descr.innerHTML = data[currentLanguage][index].descr.replace(
             /\n/g,
             "<br>"
           ))
