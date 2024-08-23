@@ -43,11 +43,17 @@ fetch("static/data.json")
       // Update the title and description based on the current language
       title.forEach(
         (title, index) =>
-          (title.textContent = data[currentLanguage][index].title)
+          (title.innerHTML = data[currentLanguage][index].title.replace(
+            /\n/g,
+            "<br>"
+          ))
       );
-      descr.forEach(
+      descriptions.forEach(
         (descr, index) =>
-          (descr.textContent = data[currentLanguage][index].description)
+          (descr.innerHTML = data[currentLanguage][index].description.replace(
+            /\n/g,
+            "<br>"
+          ))
       );
     });
   })
