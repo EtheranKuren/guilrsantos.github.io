@@ -1,0 +1,36 @@
+{
+  "portuguese": [
+    {
+      "title": "Descrição",
+      "description": "Analista de dados orientado a detalhes com 3 anos de experiência em TI e Business Intelligence. Especialidades incluem Power BI e Python, boa capacidade de resolução de problemas e documentação."
+    },
+    {
+      "title": "Experiência",
+      "description": " Consultor técnico em TI | 02/2021 - 02/2024 | Specialisterne Brasil | São Paulo, SP \nConsultor Técnico de TI (Terceirizado) | 08/2022 - 11/2023 | Braskem | São Paulo, SP \nConsultor Técnico em TI (Terceirizado) | 01/2021 - 02/2022 | Vivo (Telefônica Brasil) | São Paulo, SP"
+    },
+    { "title": "Habilidades", "description": "Power BI, Python, Documentação, SQL, Dashboards, Microsoft Office, Análise de dados, Microsoft PowerApps, KPI, ETL" },
+    { "title": "Certificados", "description": "Cambridge English: Advanced (CAE) - CEFR Level C1" },
+    {
+      "title": "Formação Acadêmica",
+      "description": "Especialização em Jogos Digitais | Anhembi Morumbi | 06/2023 | São Paulo, SP | Pós-graduação Lato Sensu \nTecnologia em Jogos Digitais | Centro Universitário FMU | Graduação CST"
+    },
+    {
+      "title": "Idiomas",
+      "description": "Inglês - Fluente\nPortuguês - Nativo"
+    }
+  ],
+  "english": [
+    {
+      "title": "Description",
+      "description": "Detail-oriented data analyst with more than 3 years of experience in TI and Business Intelligence. Specialties include Power BI and Python, good problem solving skills and documentation."
+    },
+    { "title": "Experience", "description": "Specialisterne Brasil - IT Technician/Consultant | 02/2021 - 02/2024, São Paulo, SP \nBraskem - IT Technician (Contract), São Paulo, SP | 08/2022 - 11/2023 \nVivo (Telefônica Brasil) - IT Technician (Contract), São Paulo, SP | 01/2021 - 02/2022" },
+    { "title": "Skills", "description": "Power BI, Python, SQL, Microsoft Office, Microsoft PowerApps, KPI, ETL, Documentation, Dashboards, Data Analysis." },
+    { "title": " Certificates", "description": "Cambridge English: Advanced (CAE) - CEFR Level C1" },
+    { "title": "Education", "description": "Specialization in Digital Games | Anhembi Morumbi, São Paulo, SP | 06/2023 | Lato Sensu Post-Graduate Degree\nTechnology in Digital Games | University Center FMU | FIAM-FAAM, São Paulo, SP | 12/2019 | CST Graduation" },
+    {
+      "title": "Languages",
+      "description": "English - Fluent\nPortuguese - Native"
+    }
+  ]
+}
